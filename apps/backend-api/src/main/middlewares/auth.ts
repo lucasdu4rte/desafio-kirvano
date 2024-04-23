@@ -4,7 +4,11 @@ import { type NextFunction, type Request, type Response } from 'express'
 
 export const auth = (req: Request, res: Response, next: NextFunction) => {
   const accessToken = req.query.access_token
-  if (!accessToken) return forbidden(new AccessDeniedError())
 
-  next()
+  if (!accessToken) {
+    const forbiddenError = forbidden(new AccessDeniedError())
+    return res.status(forbiddenError.status).json(forbiddenError)
+  }
+
+  return next()
 }
