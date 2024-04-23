@@ -2,9 +2,7 @@
 
 Este é um projeto que consiste em um backend Node.js e um frontend Next.js, ambos configurados para serem executados usando Docker Compose.
 
-<video width="400" height="300" controls>
-  <source src="demo.mp4" type="video/mp4">
-</video>
+[![Animação de Demonstração do App](demo.gif)](https://youtu.be/KrB1sx7gQR0)
 
 Ansioso para ver funcionando em alta resolução? Acesse a [Demo no YouTube](https://youtu.be/KrB1sx7gQR0)
 
